@@ -1,0 +1,159 @@
+/* Custom styles for FertiSolution */
+html {
+  scroll-padding-top: 30px; /* matches the height of your navbar */
+  scroll-margin-bottom: 30px;
+}
+
+/* Card hover effect */
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-scale:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Nav link underline animation */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #afb1b5;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Button hover effect */
+.btn-primary {
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59,130,246,0.4);
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Form input focus styles */
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.3);
+    border-color: #3b82f6;
+}
+
+/* Logo image height */
+.logo-img {
+    height: 75px;
+}
+
+/* Logo styling */
+.logo-img {
+  max-height: 57px;          /* Adjust based on your navbar size */
+  width: auto;
+  filter: drop-shadow(0 2px 4px rgba(85, 77, 77, 0.2));
+  transition: all 0.3s ease;
+  border-radius: 6px;        /* Soft rounded corners */
+  background-color: rgba(248, 246, 250, 0); /* Subtle background on hover */
+}
+
+/* Optional: Add a light background on hover for better contrast */
+.logo-img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+  background-color: rgba(210, 205, 205, 0.1);
+}
+
+
+.logo-img {
+  background-color: rgb(226, 227, 235);
+  padding: 6px 12px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  margin-bottom: 2px;
+}
+
+#contact{
+    background: #ffffff08;
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+    margin-bottom: 30px;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+}
+
+#about {
+    background: #ffffff08;
+    padding: 120px;
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+#commodities {
+  
+   padding: 60px ;
+}   
+
+#contact {
+    padding: 120px;
+    margin-top: 10px;
+}   
+
+
+
+#home, contact {
+  background-image: url(svg/pexels-freestockpro-7768447.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;       /* or contain, auto, etc. */
+  background-attachment: fixed; /* optional: parallax effect */
+  position: relative;
+  z-index: 1;
+}.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+  z-index: -1; /* Place behind content */
+}
+
+#navbar {
+    
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect */
+  height: 82px; /* Adjust based on your design */
+  width: 100%;
+    border-bottom: 1px solid rgba(246, 245, 248, 0); /* Subtle border for separation */
+} 
+
+
+
+

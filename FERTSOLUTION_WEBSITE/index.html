@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FertiSolution - Fertilizer Trade Experts</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+
+    <!-- ========== EDITABLE COMPANY INFORMATION ========== -->
+    <!-- 
+        Change the values below to update:
+        - Phone number displayed on the site
+        - Email address displayed on the site
+        - Office address
+        - The email address where contact form messages will be sent (FORM_SUBMIT_EMAIL)
+    -->
+    <div id="company-data" style="display: none;">
+        <span id="comp-phone">+971 5087 17200</span>
+        <span id="comp-email">office@fertsolution.com</span>
+        <span id="comp-address">Business Park, DDP, Dubai - UAE</span>
+        <span id="form-email">office@fertsolution.com</span>   <!-- Change this to receive form messages -->
+    </div>
+    <!-- ================================================= -->
+
+    <!-- Navigation (Logo left, links right) -->
+    <nav id="navbar" class="bg-gray-900 text-white py-2 px-6 fixed w-full z-20">
+        <div class="max-w-9xl mx-auto flex justify-between items-center flex-wrap gap-4">
+            <!-- Logo -->
+            <div>
+               <img  id="logo" class="logo-img w-auto align-left" src="svg/company_logo_-removebg-preview.png" alt="">
+               
+                <p class="text-xs text-gray-400">FERTILIZER TRADE FZCO</p>
+            </div>
+            <!-- Navigation Links (right side) -->
+            <div class="flex flex-wrap gap-6 text-sm">
+                <a href="#home" class="nav-link hover:text-blue-400 transition">Home</a>
+                <a href="#about" class="nav-link hover:text-blue-400 transition">About</a>
+                <a href="#commodities" class="nav-link hover:text-blue-400 transition">Commodities</a>
+                <a href="#contact" class="nav-link hover:text-blue-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-16 px-6 bg-gradient-to-r from-gray-900 to-gray-500 text-white min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Fertsolution Advisors – <span class="text-blue-600">Global Commodity Trade Advisory</span>– </h2>
+            <p class="text-xl text-gray-300 max-w-7xl">Fertsolution Advisors – Global Commodity Trade Advisory
+Strategic advisory and sourcing for the global movement of essential commodities.
+We work with producers, industrial buyers, financial partners, and government institutions to structure and facilitate the supply of fertilizers, coal, ores, and other critical industrial inputs across international markets.
+From market intelligence and sourcing strategy to structuring long-term offtake agreements and executing complex cross-border transactions, Fertsolution Advisors helps connect resources, capital, and markets.
+30+ Years Experience | Global Networks | Transaction Focused
+
+GLOBAL COMMODITY FOCUS
+Commodities that power industry and agriculture
+Fertsolution Advisors focuses on the strategic movement of commodities that are fundamental to global growth and food security.
+Fertilizers
+Nitrogen, phosphates, potash and specialty nutrients essential for global agriculture.
+Coal
+Thermal and metallurgical coal supporting energy generation and industrial production.
+Ores & Minerals
+Manganese, iron ore and other key mineral inputs for steel and manufacturing sectors.
+Industrial Raw Materials
+Critical materials supporting infrastructure, power generation and heavy industry.
+
+</p>
+            <button id="exploreBtn" class="mt-8 bg-blue-600 text-white px-8 py-3 rounded-lg btn-primary">
+                Explore Our Services
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl font-bold mb-8 text-gray-800">About Us</h3>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-gray-600 leading-relaxed">Structuring and enabling global commodity trade
+Our role is to advise, structure and facilitate transactions across the commodity value chain.
+Trade Advisory
+Strategic guidance on global commodity markets and trade flows.
+Strategic Sourcing Connecting buyers with reliable producers and supply ecosystems.
+Offtake Structuring Development of long-term supply agreements and government contracts.
+Transaction Execution Support
+Advisory through the full lifecycle of international commodity transactions.
+Market Entry Strategy
+Helping producers and investors access new global markets.</p>
+                    <p class="text-gray-600 leading-relaxed mt-4">Headquartered in Dubai, UAE, FertiSolution operates across multiple sectors with business units in Commodities, Fertilizers and raw materials, Water-Soluble Fertilizers (WSF), Minerals, Oil & Gas, Logistics, and Analytics Technology.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg hover-scale">
+                    <h4 class="font-semibold text-lg mb-4">Our Global Network</h4>
+                    <p class="text-gray-600">With deep expertise and strong global networks, we deliver efficient, reliable, and value-driven solutions to our partners in the Middle East and beyond.</p>
+                    <div class="mt-4 grid grid-cols-2 gap-4">
+                        <div class="text-center p-3 bg-white rounded shadow-sm hover-scale">
+                            <i class="fas fa-globe-asia text-3xl text-blue-600 mb-2"></i>
+                            <p class="text-sm font-semibold">Middle East</p>
+                        </div>
+                        <div class="text-center p-3 bg-white rounded shadow-sm hover-scale">
+                            <i class="fas fa-globe-asia text-3xl text-blue-600 mb-2"></i>
+                            <p class="text-sm font-semibold">Asia Pacific</p>
+                        </div>
+                        <div class="text-center p-3 bg-white rounded shadow-sm hover-scale">
+                            <i class="fas fa-globe-americas text-3xl text-blue-600 mb-2"></i>
+                            <p class="text-sm font-semibold">Americas</p>
+                        </div>
+                        <div class="text-center p-3 bg-white rounded shadow-sm hover-scale">
+                            <i class="fas fa-globe-europe text-3xl text-blue-600 mb-2"></i>
+                            <p class="text-sm font-semibold">Europe & Africa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Sectors -->
+    <section id="commodities" class="py-16 px-6 bg-gray-50"> 
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl font-bold mb-8 text-center text-gray-800">Our Business Sectors</h3>
+            <p> Decades of entrepreneurial and operational experience
+Fertsolution Advisors brings more than 30 years of experience across commodities, mining, energy and international trade.
+Our leadership experience includes:
+Structuring international commodity supply agreements
+Developing strategic sourcing networks across global markets
+Facilitating cross-border partnerships and joint ventures
+Advising on mine acquisition and resource development
+Participating in upstream energy opportunities including India’s NELP oil and gas bidding rounds
+Our approach combines strategic insight with practical deal execution.
+
+OUR APPROACH
+Building reliable commodity supply ecosystems
+Global commodity markets are complex and highly interconnected.
+Fertsolution Advisors works with stakeholders across the supply chain — including producers, traders, industrial buyers, financial institutions and government entities — to structure transactions that are commercially viable and operationally reliable.
+Our focus is not only on advisory, but on enabling real transactions and long-term supply relationships.
+
+</p>
+
+<details>
+<div   class="mt-8 p-6 bg-white rounded-lg hover-scale shadow ">
+    <h2>CORE CAPABILITIES</h2>
+    <p>Global Commodity Trade Advisory
+Strategic Sourcing & Market Development
+Fertilizers, Coal & Industrial Raw Materials
+Government Relations & Regulatory Navigation
+Strategic Alliances & Joint Ventures
+Mergers, Acquisitions & Asset Evaluation
+Mine Acquisition & Development
+Energy Sector Strategy & Oil & Gas Bidding
+International Trade Representation & Project Structuring</p>
+</div>
+
+<div class="mt-8 p-6 bg-white rounded-lg hover-scale shadow ">
+
+<h1>GLOBAL NETWORK</h1>
+<p>Connecting resources, markets and capital
+Commodity trade is built on relationships and trust.
+Fertsolution Advisors works with a broad network of:
+Global commodity producers
+Industrial end users
+Commodity trading houses
+Financial institutions and trade financiers
+Government and institutional buyers
+Through these relationships we help create efficient and reliable supply chains across international markets.</p>
+
+</div>
+
+</details>
+
+<h1></h1>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-lg text-center hover-scale shadow">
+                    <i class="fas fa-seedling text-3xl text-green-600 mb-2"></i>
+                    <p class="font-semibold">Fertilizers</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center hover-scale shadow">
+                    <i class="fas fa-chart-line text-3xl text-blue-600 mb-2"></i>
+                    <p class="font-semibold">Commodities</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center hover-scale shadow">
+                    <i class="fas fa-water text-3xl text-cyan-600 mb-2"></i>
+                    <p class="font-semibold">WSF</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center hover-scale shadow">
+                    <i class="fas fa-gem text-3xl text-yellow-600 mb-2"></i>
+                    <p class="font-semibold">Minerals</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center hover-scale shadow">
+                    <i class="fas fa-oil-can text-3xl text-orange-600 mb-2"></i>
+                    <p class="font-semibold">Oil & Gas</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center hover-scale shadow">
+                    <i class="fas fa-ship text-3xl text-indigo-600 mb-2"></i>
+                    <p class="font-semibold">Logistics</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center hover-scale shadow">
+                    <i class="fas fa-building text-3xl text-red-600 mb-2"></i>
+                    <p class="font-semibold">Realty</p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section with Working Form -->
+    <section id="contact" class="py-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-3xl font-bold mb-9">Get in Touch</h3>
+                    <p class="text-gray-600 mb-8">Partner with Fertsolution Advisors
+Whether you are a producer seeking access to global markets, an industrial buyer securing long-term supply, or a financial partner participating in commodity trade, Fertsolution Advisors provides the strategic expertise to structure and facilitate successful transactions.
+Fertsolution Advisors FZCO
+Global Commodity Trade Advisory
+Strategic Sourcing | Trade Structuring | Transaction Support</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-map-marker-alt text-2xl text-gray-600 w-8"></i>
+                            <span id="display-address" class="text-gray-700">Business Park, DDP, Dubai - UAE</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-phone text-2xl text-gray-600 w-8"></i>
+                            <span id="display-phone" class="text-gray-700">+971 5087 17200</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-envelope text-2xl text-gray-600 w-8"></i>
+                           <a href="mailto:office@fertsolution.com" class="text-gray-700 hover:text-blue-500 transition">office@fertsolution.com</a>
+                         
+                        </div>
+<a href="https://www.fertsolution.com/"><img class="background-image-url h-28 w-30" src="svg/company_logo_-removebg-preview.png" alt=""></a>
+                         
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg hover-scale">
+                    <h4 class="text-xl font-semibold mb-4">Send us a message</h4>
+                    <form id="contact-form" method="POST" class="space-y-4">
+                        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded-lg transition focus:ring-2 focus:ring-blue-500">
+                        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded-lg transition focus:ring-2 focus:ring-blue-500">
+                        <textarea name="message" placeholder="Your Message" rows="4" required class="w-full p-3 border rounded-lg transition focus:ring-2 focus:ring-blue-500"></textarea>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg w-full btn-primary">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h5 class="font-bold text-lg mb-4">FertiSolution</h5>
+                    <p class="text-gray-400 text-sm">Independent fertilizer & commodity trade advisor and sourcing partner </p>
+                    <h5 class="text-gray-400 text-sm">visit our website </h5>
+                    <a href="https://www.fertsolution.com/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition">fertsolution.com</a>
+                    <link rel="stylesheet" href="https://www.fertsolution.com/favicon.ico">
+                </div>
+                <div>
+                    <h6 class="font-semibold mb-3">Quick Links</h6>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About</a></li>
+                        <li><a href="#commodities" class="hover:text-white transition">Commodities</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold mb-3">Sectors</h6>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Fertilizers</li>
+                        <li>Commodities</li>
+                        <li>Minerals</li>
+                        <li>Oil & Gas</li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold mb-3">Follow Us</h6>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2025 FertiSolution. All rights reserved. Dubai, UAE</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
